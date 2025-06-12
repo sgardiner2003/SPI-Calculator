@@ -1,6 +1,7 @@
 import pandas as pd
 
-overall_results = pd.read_csv(r"C:\Users\sophi\Downloads\ncaa data.csv")
+overall_results = pd.read_csv(r"C:\Users\sophi\Downloads\dean data.xls.csv")
+arwen = pd.read_csv(r"C:\Users\sophi\Downloads\arwen data.csv")
 # print(overall_results.head(20))
 
 def spi(results,my_fencer_power):
@@ -42,7 +43,11 @@ def spi(results,my_fencer_power):
     # diffSPI = (L_strength + M_strength + H_strength) * overall_win
 
     print(SPI) # actual is 28.031875, not 28.996039
+    print(L)
+    print(M) # should be 29.66468491
+    print(H)
 
     # print(diffSPI) doesn't match actual
 
-spi(overall_results,20)
+spi(overall_results,60)
+# spi(arwen,100)
